@@ -1,7 +1,7 @@
 {
-  "name": "CatShelterApp",
+  "name": "Animal-Shelter-Project",
   "version": "1.0.0",
-  "description": "## Cat Shelter App",
+  "description": "## Animal Shelter Project",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
