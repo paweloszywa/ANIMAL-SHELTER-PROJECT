@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
-    "start": "webpack-dev-server --hot --inline -d"
+    "start": "webpack-dev-server --hot --inline -d",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +17,6 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-iframe": "^1.8.0",
-    "react-live": "^2.2.2",
     "react-router-dom": "^5.0.1",
     "whatwg-fetch": "^3.0.0"
   },
@@ -28,6 +29,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
@@ -40,10 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cenora6/Cat_Shelter_App.git"
+    "url": "git+https://github.com//paweloszywa/ANIMAL-SHELTER-PROJECT.git"
   },
-  "bugs": {
-    "url": "https://github.com/Cenora6/Cat_Shelter_App/issues"
-  },
-  "homepage": "https://github.com/Cenora6/Cat_Shelter_App#readme"
+  "homepage": "https://paweloszywa.github.io/ANIMAL-SHELTER-PROJECT"
 }

@@ -18,7 +18,6 @@ import ContactSection from "./Menu/ContactSection";
 import AdvicesAdopt from "./Menu/AdvicesAdopt";
 import AllPetsSection from "./Menu/AllPetsSection";
 
-
 class Index extends Component {
     state = {
         data: null,

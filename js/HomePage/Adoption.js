@@ -29,7 +29,6 @@ class Adoption extends Component{
                                 <Link to='/adoption/cat' className='text-adopt adopt-cat'>ADOPTUJ KOTA</Link>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
