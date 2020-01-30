@@ -1,0 +1,231 @@
+.all-adopt-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet-to-all{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .pet{
+      @include tablet{
+        width: 50%;
+      }
+      width: 33.333%;
+      padding: $paddingMain/3;
+    }
+  }
+
+  .name-pet{
+    width: 100%;
+    background: $petNameBackground;
+    font-family: $font;
+    font-size: $font-size-second*4;
+    color: $fontMainColor;
+    padding: $padding/2;
+    text-align: center;
+    margin-top: 15px;
+    &:hover{
+      opacity: 0.98;
+    }
+    @include tablet-to-all{
+      border-radius: 10px 10px 0 0;
+      margin-top: 0;
+    }
+  }
+
+  .main-photo-pet{
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    img{
+      width: 100%;
+      opacity: 0.9;
+      max-height: 600px;
+      overflow: auto;
+      display: block;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+
+    button{
+      margin: 0;
+      padding: 0;
+      width: auto;
+      overflow: visible;
+      background: transparent;
+      position: absolute;
+      bottom: 45%;
+      z-index: 10;
+      border-style: solid;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    .prev{
+      position: absolute;
+      left: 0;
+      border-width: 16px 25px 16px 0;
+      border-color: transparent #6089b5 transparent transparent;
+      &:focus{
+        outline: none;
+      }
+      &:hover{
+        opacity: 0.9;
+      }
+    }
+
+    .next{
+      right: 0;
+      border-style: solid;
+      border-width: 16px 0 16px 25px;
+      border-color: transparent transparent transparent #6089b5;
+      &:focus{
+        outline: none;
+      }
+      &:hover{
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .on-img-text{
+    position: absolute;
+    bottom: 3%;
+    left: 45%;
+    font-size: $font-size;
+    background: $petInfoOnImageBackground;
+    padding: $padding/2;
+    border-radius: $borderRadius*3;
+    font-family: $font;
+    color:$fontMainColor;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
+
+.info-pet{
+  display: flex;
+  width: 100%;
+  padding: $paddingMain;
+  font-family: $font-second;
+  background: $petInfoBackground;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.3rem;
+  font-size: $font-size;
+
+  .category-pet-info{
+    width: 40%;
+    .pet-attributes{
+      padding: 7px;
+    }
+  }
+  .description-pet{
+    width: 60%;
+  }
+}
+
+.pet-all-about{
+  width: 100%;
+  background: $petAdoptionMainTextBackground;
+  font-family: $font;
+  color:$fontMainColor;
+  text-align: center;
+
+  @include tablet-to-all{
+    border-radius: 0 0 6px 6px;
+  }
+
+  .do-you-want-adopt-text{
+    font-size: $font-size-second*4;
+    padding: $padding;
+  }
+
+  .pet-form-container{
+    display: flex;
+    width: 100%;
+    font-size: $font-size-second*2;
+    cursor: pointer;
+
+    .text-about-pet-button{
+      width: 50%;
+      background: $textAboutPetButtonBackground;
+      padding: $padding/2;
+
+      @include tablet-to-all{
+        border-radius: 0 0 0 6px;
+      }
+
+      &:hover{
+        opacity: 0.9;
+      }
+    }
+
+    .show-or-hide-phone-button{
+      width: 50%;
+      padding: $padding/2;
+      background: $phoneShowOrHideButtonBackground;
+
+      @include tablet-to-all{
+        border-radius: 0 0 6px 0;
+      }
+
+      &:hover{
+        opacity: 0.9;
+      }
+    }
+  }
+
+}
+
+.display-none {
+  display: none;
+}
+
+.form-in-pet{
+  font-family: $font;
+  background: $petFormBackground;
+
+  @include tablet-to-all{
+    border-radius: 5px 5px 7px 7px;
+  }
+
+  form{
+    padding: $padding 0;
+
+    label{
+      display: none;
+    }
+
+    input.pet-name[type='text']{
+      border-radius: 0;
+    }
+
+    input[type="text"]{
+      width: 90%;
+      border-radius: 15px 15px 0 0;
+      padding: $padding/2;
+    }
+    input[type="email"]{
+        width: 90%;
+    }
+
+    textarea{
+      @include tablet-to-all{
+        height: 150px;
+      }
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      border-radius: 0 0 15px 15px;
+    }
+  }
+}
+

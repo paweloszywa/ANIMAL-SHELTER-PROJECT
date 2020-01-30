@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background: #fff;
+  background:linear-gradient(to right,#fff 0, #f8f8f8 23%,#fff 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+@include desktop{
+   .container {
+     max-width: 1352px;
+     margin: 0 auto;
+     padding: 0;
+   }
+ }
+
+$paddingMain: 15px;
+$padding: 20px;
+
+$font-size: 15px;
+$font-size-second: 10px;
+
+$borderRadius: 5px;

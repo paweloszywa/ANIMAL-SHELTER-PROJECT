@@ -1,0 +1,38 @@
+$tablet-width: 700px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-to-all {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin animation-menu-on{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@mixin animation-menu-off{
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+
+
+

@@ -1,0 +1,177 @@
+{
+  "settings": {
+    "name": "Nazwa Schroniska",
+    "contact": {
+      "phone": "111111111",
+      "mail": "schronisko-przykladowe@gmail.com",
+      "street": "ul. Przykładowa 5",
+      "streetGoogleLink": "https://goo.gl/maps/r8CzE5o3baQGKg778",
+      "city": "Miasto",
+      "facebook": "https://www.facebook.com",
+      "instagram": "https://www.instagram.com"
+    },
+    "accountNumber": "15 1050 1416 1000 0023 0796 0209",
+    "descriptionAdd": "Stowarzyszenie \"Arka Nadziei\" 25-352 Kielce, ul. Mickiewicza 1",
+    "nameForTax": "Stowarzyszenie \"Arka Nadziei\" Schronisko dla Bezdomnych Zwierząt w Dyminach",
+    "krsNumber": "0000261249"
+  },
+
+  "news": [
+    {
+      "id": 1,
+      "title": "Tytuł Newsa 1",
+      "photo": "http://localhost:3001/images/depth-of-field-photograph-of-white-and-black-kitten-1120049.jpg",
+      "photoDescription": "jakiśkot",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    },
+    {
+      "id": 2,
+      "title": "Tytuł Newsa 2",
+      "photo": "http://localhost:3001/images/cat-paws-in-shallow-focus-photography-909916.jpg",
+      "photoDescription": "jakiśkot",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."    },
+    {
+      "id": 3,
+      "title": "Tytuł Newsa 3",
+      "photo": "http://localhost:3001/images/adorable-animal-cat-1404825.jpg",
+      "photoDescription": "jakiśkot",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+    }
+  ],
+  "cats": [
+    {
+      "id": 1,
+      "name": "Amiga",
+      "image": ["http://localhost:3001/images/cat1.jpg", "http://localhost:3001/images/cat2.jpeg", "http://localhost:3001/images/cat3.jpg"],
+      "race": "europejska",
+      "gender": "samica",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "size": "średni",
+      "age": "4 miesiące",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 2,
+      "name": "Susi",
+      "image": ["http://localhost:3001/images/adorable-animal-cat-1404825.jpg"],
+      "race": "perski",
+      "gender": "samica",
+      "description": "fajny koteł",
+      "size": "mała",
+      "age": "2 miesiące",
+      "evidNumber": 123454670
+    },
+    {
+      "id": 3,
+      "name": "Miki",
+      "image": ["http://localhost:3001/images/depth-of-field-photograph-of-white-and-black-kitten-1120049.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny koteł",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 4,
+      "name": "Elis",
+      "image": ["http://localhost:3001/images/cat5.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny koteł",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 5,
+      "name": "Koki",
+      "image": ["http://localhost:3001/images/cat10.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny koteł",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 6,
+      "name": "Zuźka",
+      "image": ["http://localhost:3001/images/cat7.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny koteł",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    }
+  ],
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Tytan",
+      "image": ["http://localhost:3001/images/dog2.jpg", "http://localhost:3001/images/dog1.jpg"],
+      "race": "mix",
+      "gender": "samiec",
+      "description": "Tytan to psiak, który do Schroniska trafił w sierpniu 2016r. Tytan nie toleruje innych psów do ludzi podchodzi bardzo indywidualnie. Bardzo lubi spacery i umie chodzić na smyczy. Jest bardzo łasy na smakołyki, można w ten sposób wkupić w jego łaski.",
+      "size": "mały",
+      "age": "7 lat",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 2,
+      "name": "Azor",
+      "image": ["http://localhost:3001/images/adult-golden-retriever-close-up-photography-1490908.jpg", "http://localhost:3001/images/1.jpg"],
+      "race": "perski",
+      "gender": "samica",
+      "description": "fajny koteł",
+      "size": "mała",
+      "age": "2 miesiące",
+      "evidNumber": 123454670
+    },
+    {
+      "id": 3,
+      "name": "Fido",
+      "image": ["http://localhost:3001/images/1.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny psiak",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 4,
+      "name": "Miki",
+      "image": ["http://localhost:3001/images/selective-focus-photo-of-red-dog-on-grass-field-1289905.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny psiak",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 5,
+      "name": "Johny",
+      "image": ["http://localhost:3001/images/dog5.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny psiak",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    },
+    {
+      "id": 6,
+      "name": "Mati",
+      "image": ["http://localhost:3001/images/dog6.jpg"],
+      "race": "amstaff",
+      "gender": "samiec",
+      "description": "fajny psiak",
+      "size": "średni",
+      "age": "3 lata",
+      "evidNumber": 563454679
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.name-of-category-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $nameOfCategoryBackground;
+  margin: 75px auto 75px;
+  box-shadow: 0 7px 36px 0 rgba(118, 127, 114, 0.72);
+
+  @include desktop{
+    border-radius: $borderRadius*1.5;
+    width: 100%;
+    margin-top: 135px;
+  }
+
+  .name-of-category-text{
+    font-family: $font;
+    font-size: $font-size-second*4;
+    color: $fontMainColor;
+    padding: $paddingMain;
+    text-align: center;
+  }
+}

@@ -1,0 +1,40 @@
+.container{
+  margin-top: 125px;
+}
+
+.section-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  background: $backgroundToSection;
+  border-radius: $borderRadius;
+  font-family: $font;
+}
+
+.section-image{
+  img{
+    width: 100%;
+    @include desktop{
+      border-radius: $borderRadius*2;
+      max-width: 900px;
+      margin: 15px;
+    }
+    opacity: 0.8;
+  }
+}
+
+.section-text {
+  width: 100%;
+  color: $fontMainColor;
+  font-size: $font-size-second*2;
+  font-weight: 500;
+  background: $allSectionTextBackground;
+  text-align: center;
+  @include desktop {
+    border-radius: $borderRadius*1.2;
+  }
+  line-height: 1.3;
+  padding: $padding;
+}

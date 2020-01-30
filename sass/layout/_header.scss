@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Calistoga&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
+
+.nav {
+  border-radius: $borderRadius*2;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo-back{
+  background: $backgroundHeader;
+  border-radius: 10px;
+  box-shadow: inset 10px -25px 38px -12px rgba(247,237,247,1);
+  @include desktop{
+    margin-left: 60px;
+  }
+  .nav-logo {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 10px;
+  }
+}
+
+.shelter-name{
+  font-size: 1.7rem;
+  color: $fontMainColor;
+  font-family: $font;
+  margin-left: 15px;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  background: $backgroundHeader;
+  padding: $paddingMain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+  .open-menu {
+    background: url("../images/hamburger-icon.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    display: block;
+    color: transparent;
+  }
+}
+
+.menu nav {
+  position: absolute;
+  width: 100%;
+  top: 5.625rem;
+  left: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 3px 6px #00000029;
+  z-index: 10;
+
+  @include desktop{
+    position: sticky;
+    background: none;
+    box-shadow: none;
+  }
+}
+
+.menu nav ul {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+
+  @include desktop{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu nav a {
+  display: inline-block;
+  color: #524f4f;
+  padding: $padding;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  @include desktop{
+      color:$fontMainColor;
+      position: relative;
+
+      &:hover:after {
+        @include animation-menu-on
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 1em;
+        width: 100%;
+        border-bottom: 2px solid;
+        margin-top: 10px;
+        @include animation-menu-off
+      }
+  }
+}
+
+.menu nav .close-menu {
+  margin: 25px 25px;
+  background: $closeMenuButton;
+  border-radius: 100px;
+  padding: $padding $padding*3;
+  color: $fontMainColor;
+  font-size: 1.5rem;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu nav.hide {
+  display: none;
+  @include desktop{
+    display: flex;
+  }
+}
+
+@include desktop{
+  .menu {
+    .open-menu, .close-menu{
+      display: none;
+    }
+  }
+}

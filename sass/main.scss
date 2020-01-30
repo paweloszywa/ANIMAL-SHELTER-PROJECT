@@ -1,0 +1,19 @@
+@import 'settings/reset';
+@import 'settings/colors';
+@import 'settings/mixins';
+@import 'settings/fonts';
+@import 'settings/base';
+
+
+@import 'layout/header';
+@import 'layout/homepage/adopt';
+@import 'layout/homepage/news';
+@import 'layout/homepage/important';
+@import "layout/menu/contact";
+@import 'layout/menu/all-section';
+@import 'layout/menu/advices-about-us';
+@import 'layout/menu/pets-section';
+@import 'layout/main-text-section';
+@import 'layout/footer';
+
+

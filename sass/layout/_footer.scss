@@ -1,0 +1,39 @@
+footer {
+  background: #e6e6e6;
+  height: 120px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .contact{
+      justify-content: space-between;
+      p{
+        font-size: 15px;
+        padding: 5px;
+        font-family: 'Roboto', cursive;
+        font-weight: 500;
+        color: #656565;
+      }
+      p:hover{
+        opacity: 0.8;
+      }
+    }
+
+    .social-media{
+      display: flex;
+      flex-direction: row;
+      padding: 5px;
+
+      p:hover{
+        opacity: 0.8;
+      }
+
+      p:first-child{
+        margin-right: 10px;
+      }
+    }
+  }
+
+}
