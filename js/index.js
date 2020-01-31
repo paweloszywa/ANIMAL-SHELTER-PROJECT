@@ -24,7 +24,7 @@ class Index extends Component {
     };
 
     componentDidMount() {
-        fetch("http://localhost:3000/settings").then(r => r.json())
+        fetch("https://my-json-server.typicode.com/paweloszywa/ANIMAL-SHELTER-PROJECT/settings").then(r => r.json())
             .then(data => {
                 this.setState({
                     data: data

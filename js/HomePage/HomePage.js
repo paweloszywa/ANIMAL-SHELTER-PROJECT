@@ -10,7 +10,7 @@ class HomePage extends Component{
     };
 
     componentDidMount() {
-        fetch("http://localhost:3000/db/").then(r => r.json())
+        fetch("https://my-json-server.typicode.com/paweloszywa/ANIMAL-SHELTER-PROJECT/db").then(r => r.json())
             .then(data => {
                 this.setState({
                     data: data
