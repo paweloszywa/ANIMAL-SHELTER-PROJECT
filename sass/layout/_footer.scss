@@ -7,13 +7,17 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    margin-top: 75px;
     .contact{
       justify-content: space-between;
       p{
         font-size: $font-size;
-        padding: $padding/4;
+        padding: $padding/7;
         font-weight: 500;
         color: $footerTextColor;
+        @include tablet-to-all{
+          padding: $padding/4;
+        }
       }
       p:hover{
         opacity: 0.8;
