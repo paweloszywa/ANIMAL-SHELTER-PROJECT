@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import ReactDOM from 'react-dom';
 import ImportantThings from "./ImportantThings";
 import Adoption from "./Adoption";
 import News from "./News";
@@ -10,7 +10,7 @@ class HomePage extends Component{
     };
 
     componentDidMount() {
-        fetch("http://localhost:3001/db.json").then(r => r.json())
+        fetch("http://localhost:3000/db/").then(r => r.json())
             .then(data => {
                 this.setState({
                     data: data
@@ -22,11 +22,13 @@ class HomePage extends Component{
         if (this.state.data === null){
             return null
         }
-        const news = this.state.data.news;
-        const accountNumber = this.state.data.settings.accountNumber;
-        const descriptionAdd = this.state.data.settings.descriptionAdd;
-        const nameForTax = this.state.data.settings.nameForTax;
-        const krsNumber = this.state.data.settings.krsNumber;
+
+        const data = this.state.data;
+        const news = data.news;
+        const accountNumber = data.settings.accountNumber;
+        const descriptionAdd = data.settings.descriptionAdd;
+        const nameForTax = data.settings.nameForTax;
+        const krsNumber = data.settings.krsNumber;
 
         return(
             <div className='container'>
