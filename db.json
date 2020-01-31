@@ -20,20 +20,20 @@
     {
       "id": 1,
       "title": "Tytuł Newsa 1",
-      "photo": "https://drive.google.com/open?id=1vql0qqWv7FER054Photx01QhvOY8AT0h",
+      "photo": "https://drive.google.com/uc?export=view&id=1vql0qqWv7FER054Photx01QhvOY8AT0h",
       "photoDescription": "jakiśkot",
       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     },
     {
       "id": 2,
       "title": "Tytuł Newsa 2",
-      "photo": "../images/cat-paws-in-shallow-focus-photography-909916.jpg",
+      "photo": "https://drive.google.com/uc?export=view&id=1aWPQMdPYici2l4sLopJ-teWp2ja0STaN",
       "photoDescription": "jakiśkot",
       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."    },
     {
       "id": 3,
       "title": "Tytuł Newsa 3",
-      "photo": "../images/adorable-animal-cat-1404825.jpg",
+      "photo": "https://drive.google.com/uc?export=view&id=1Qp5wQWm4divOY_SYj-Km6PgKouBhVQfH",
       "photoDescription": "jakiśkot",
       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
     }
