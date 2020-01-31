@@ -12,7 +12,7 @@ class AdvicesAdopt extends Component{
                         <AdoptMainText text={'PORADY'}/>
                         <div className='section-container'>
                             <div className='section-image'>
-                                <img src='/images/white-short-coated-dog-160846.jpg'/>
+                                <img src='https://drive.google.com/uc?export=view&id=1ww-rZihso7_KxoJPwPvp6WPXbXxc4yim'/>
                             </div>
                             <div className='section-text'>
                                 <h1>What is Lorem Ipsum?</h1>
