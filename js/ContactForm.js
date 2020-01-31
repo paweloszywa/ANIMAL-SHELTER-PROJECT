@@ -63,7 +63,7 @@ class ContactForm extends Component {
 
         let petName = null;
         if (this.state.petName){
-            petName = <input class='pet-name' type='text' value={this.state.petName}/>
+            petName = <input className='pet-name' type='text' value={this.state.petName}/>
         }
 
         return (

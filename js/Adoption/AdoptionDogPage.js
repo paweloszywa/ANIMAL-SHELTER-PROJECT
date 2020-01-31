@@ -11,7 +11,7 @@ class AdoptionDogPage extends Component{
 
     componentDidMount() {
 
-        fetch("http://localhost:3000/dogs").then(r => r.json())
+        fetch("https://my-json-server.typicode.com/paweloszywa/ANIMAL-SHELTER-PROJECT/dogs").then(r => r.json())
             .then(data => {
                 this.setState({
                     data: data

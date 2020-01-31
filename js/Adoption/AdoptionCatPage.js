@@ -10,7 +10,7 @@ class AdoptionCatPage extends Component{
     };
 
     componentDidMount() {
-        fetch("http://localhost:3000/cats").then(r => r.json())
+        fetch("https://my-json-server.typicode.com/paweloszywa/ANIMAL-SHELTER-PROJECT/cats").then(r => r.json())
             .then(data => {
                 this.setState({
                     data: data
