@@ -1,5 +1,4 @@
 {
-  "homepage": "https://paweloszywa.github.io/ANIMAL-SHELTER-PROJECT/",
   "name": "animal-shelter-project",
   "version": "1.0.0",
   "description": "## Animal Shelter Project",
@@ -44,5 +43,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paweloszywa/ANIMAL-SHELTER-PROJECT.git"
-  }
+  },
+  "homepage": "https://paweloszywa.github.io/ANIMAL-SHELTER-PROJECT/"
 }
