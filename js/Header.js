@@ -33,8 +33,8 @@ class Header extends Component{
         return(
             <section className="nav">
                 <header className="menu">
-                    <div className='logo-back'><img className='nav-logo' src={logo} alt='logo'/></div>
-                    <p className='shelter-name'>{shelterName}</p>
+                    <Link to='/'><div className='logo-back'><img className='nav-logo' src={logo} alt='logo'/></div></Link>
+                    <Link to='/'><p className='shelter-name'>{shelterName}</p></Link>
                     <a href="#" className="open-menu" onClick={this.handleOpenMenu} />
                     <nav className={navClass}>
                         <ul onClick={this.handleCloseMenu}>

@@ -1,7 +1,7 @@
 footer {
   background: $footerBackground;
   height: 120px;
-
+  font-family: $font-second;
   .container {
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,6 @@ footer {
       p{
         font-size: $font-size;
         padding: $padding/4;
-        font-family: $font-second;
         font-weight: 500;
         color: $footerTextColor;
       }
