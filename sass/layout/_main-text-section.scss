@@ -15,9 +15,13 @@
 
   .name-of-category-text{
     font-family: $font;
-    font-size: $font-size-second*4;
+    font-size: $font-size-second*3;
     color: $fontMainColor;
-    padding: $paddingMain;
+    padding: $padding/2;
     text-align: center;
+    @include tablet-to-all{
+      font-size: $font-size-second*4;
+      padding: $paddingMain;
+    }
   }
 }

@@ -21,7 +21,7 @@
     width: 100%;
     background: $petNameBackground;
     font-family: $font;
-    font-size: $font-size-second*4;
+    font-size: $font-size-second*3;
     color: $fontMainColor;
     padding: $padding/2;
     text-align: center;
@@ -32,6 +32,7 @@
     @include tablet-to-all{
       border-radius: 10px 10px 0 0;
       margin-top: 0;
+      font-size: $font-size-second*4;
     }
   }
 
@@ -144,8 +145,11 @@
   }
 
   .do-you-want-adopt-text{
-    font-size: $font-size-second*4;
+    font-size: $font-size-second*3;
     padding: $padding;
+    @include tablet-to-all{
+      font-size: $font-size-second*4;
+    }
   }
 
   .pet-form-container{
