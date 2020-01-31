@@ -1,7 +1,6 @@
 footer {
-  background: #e6e6e6;
+  background: $footerBackground;
   height: 120px;
-  font-family: $font-second Arial;
 
   .container {
     display: flex;
@@ -11,10 +10,11 @@ footer {
     .contact{
       justify-content: space-between;
       p{
-        font-size: 15px;
-        padding: 5px;
+        font-size: $font-size;
+        padding: $padding/4;
+        font-family: $font-second;
         font-weight: 500;
-        color: #656565;
+        color: $footerTextColor;
       }
       p:hover{
         opacity: 0.8;
@@ -24,7 +24,7 @@ footer {
     .social-media{
       display: flex;
       flex-direction: row;
-      padding: 5px;
+      padding: $padding/4;
 
       p:hover{
         opacity: 0.8;
