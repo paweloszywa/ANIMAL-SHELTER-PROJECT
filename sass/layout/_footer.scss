@@ -1,6 +1,7 @@
 footer {
   background: #e6e6e6;
   height: 120px;
+  font-family: $font-second Arial;
 
   .container {
     display: flex;
@@ -12,7 +13,6 @@ footer {
       p{
         font-size: 15px;
         padding: 5px;
-        font-family: 'Roboto', cursive;
         font-weight: 500;
         color: #656565;
       }
