@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import '../../sass/main.scss';
 
+
 class DoYouWantPet extends Component{
     render() {
 
@@ -18,6 +19,7 @@ class DoYouWantPet extends Component{
                         }
                     </div>
                 </div>
+                <div className='mobile-call'><a className='mobile-link' href='tel:1111111'>Zadzwoń</a></div>
             </div>
         )
     }

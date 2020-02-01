@@ -140,6 +140,23 @@
   color:$fontMainColor;
   text-align: center;
 
+  .mobile-call{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: $padding;
+    background: $phoneShowOrHideButtonBackground;
+    font-family: $font;
+    .mobile-link{
+      color:$fontMainColor;
+      font-size: $font-size*1.4;
+    }
+
+    @include tablet-to-all{
+      display: none;
+    }
+  }
+
   @include tablet-to-all{
     border-radius: 0 0 6px 6px;
   }
@@ -186,8 +203,9 @@
       }
     }
   }
-
 }
+
+
 
 .display-none {
   display: none;
