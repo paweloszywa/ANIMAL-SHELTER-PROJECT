@@ -2,6 +2,8 @@ footer {
   background: $footerBackground;
   height: 120px;
   font-family: $font-second;
+  position: relative;
+  z-index: 999;
   .container {
     display: flex;
     justify-content: space-between;

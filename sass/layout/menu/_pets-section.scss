@@ -19,7 +19,7 @@
 
   .name-pet{
     width: 100%;
-    background: $petNameBackground;
+    background: linear-gradient(#3b5998, #0c3949);
     font-family: $font;
     font-size: $font-size-second*3;
     color: $fontMainColor;
@@ -135,7 +135,7 @@
 
 .pet-all-about{
   width: 100%;
-  background: $petAdoptionMainTextBackground;
+  background: linear-gradient(#4ea5ff, #37778e);
   font-family: $font;
   color:$fontMainColor;
   text-align: center;
@@ -145,8 +145,9 @@
     bottom: 0;
     width: 100%;
     padding: $padding;
-    background: $phoneShowOrHideButtonBackground;
+    background: linear-gradient($phoneShowOrHideButtonBackground, $petNameBackground);
     font-family: $font;
+    font-weight: 500;
     .mobile-link{
       color:$fontMainColor;
       font-size: $font-size*1.4;
@@ -176,12 +177,13 @@
     cursor: pointer;
 
     .text-about-pet-button{
-      width: 50%;
-      background: $textAboutPetButtonBackground;
+      width: 100%;
+      background: linear-gradient(#3bcaff, #30a2cc);
       padding: $padding/2;
 
       @include tablet-to-all{
         border-radius: 0 0 0 6px;
+        width: 50%;
       }
 
       &:hover{
@@ -190,12 +192,14 @@
     }
 
     .show-or-hide-phone-button{
-      width: 50%;
-      padding: $padding/2;
-      background: $phoneShowOrHideButtonBackground;
+      display: none;
 
       @include tablet-to-all{
+        display: block;
         border-radius: 0 0 6px 0;
+        width: 50%;
+        padding: $padding/2;
+        background: linear-gradient(#4ea5ff, #37778e);
       }
 
       &:hover{
