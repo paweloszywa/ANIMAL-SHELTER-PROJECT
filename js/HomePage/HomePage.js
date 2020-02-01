@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import ImportantThings from "./ImportantThings";
 import Adoption from "./Adoption";
 import News from "./News";
+import '../../sass/main.scss';
+import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 
 class HomePage extends Component{
     state = {
@@ -32,6 +34,7 @@ class HomePage extends Component{
 
         return(
             <div className='container'>
+                <ScrollUpButton ContainerClassName="AnyClassForContainer" />
                 <Adoption />
                 <ImportantThings accountNumber={accountNumber} descriptionAdd={descriptionAdd}
                                  nameForTax={nameForTax} krsNumber={krsNumber}/>

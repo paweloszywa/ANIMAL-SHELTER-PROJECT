@@ -15,6 +15,7 @@
   background: $backgroundHeader;
   border-radius: 10px;
   box-shadow: inset 10px -25px 38px -12px rgba(247,237,247,1);
+  z-index: 999;
   @include desktop{
     margin-left: 60px;
   }
@@ -33,7 +34,6 @@
 }
 
 .menu {
-  position: absolute;
   width: 100%;
   background: $backgroundHeader;
   padding: $paddingMain;

@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Iframe from 'react-iframe';
 import ContactForm from "../ContactForm";
 import AdoptMainText from "../Adoption/MainTextSection";
+import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 
 class ContactSection extends Component{
     render() {
@@ -10,6 +11,7 @@ class ContactSection extends Component{
         return(
             <section className='contact-section'>
                 <div className='container'>
+                    <ScrollUpButton ContainerClassName="AnyClassForContainer" />
                     <AdoptMainText text={'KONTAKT'}/>
                     <div className='section-container'>
                         <div className='section-text'>

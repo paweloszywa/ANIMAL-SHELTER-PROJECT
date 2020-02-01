@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AdoptMainText from "../Adoption/MainTextSection";
 import shelterImage from "../../images/animal-shelter.jpg";
+import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 
 class AdvicesAdopt extends Component{
     render() {
@@ -9,6 +10,7 @@ class AdvicesAdopt extends Component{
             <>
                 <section className='advices-and-about-us'>
                     <div className='container'>
+                        <ScrollUpButton ContainerClassName="AnyClassForContainer" />
                         <AdoptMainText text={'PORADY'}/>
                         <div className='section-container'>
                             <div className='section-image'>
