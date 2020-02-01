@@ -29,7 +29,7 @@
   text-align: center;
   background: $newsTitleBackground;
   font-size: $font-size*1.5;
-  padding: $padding;
+  padding: $paddingMain;
 
   @include tablet-to-all {
     border-radius: 4px 4px 0 0;
@@ -51,12 +51,12 @@
 
 .news-description{
   padding: $paddingMain;
-  font-size: $font-size-second*1.5;
+  font-size: $font-size;
   background:$newsDescriptionBackground;
   text-align: justify;
   line-height: 1.1;
   @include desktop{
     border-radius: 0 0 6px 6px;
-    font-size: $font-size-second*2;
+    font-size: $font-size * 1.1;
   }
 }
