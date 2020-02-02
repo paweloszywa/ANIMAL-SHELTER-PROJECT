@@ -148,6 +148,7 @@
     background: linear-gradient($phoneShowOrHideButtonBackground, $petNameBackground);
     font-family: $font;
     font-weight: 500;
+    z-index: 998;
     .mobile-link{
       color:$fontMainColor;
       font-size: $font-size*1.4;
