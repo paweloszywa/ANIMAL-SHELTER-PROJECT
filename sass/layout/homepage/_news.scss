@@ -40,7 +40,7 @@
 .news-image{
   width: 100%;
   opacity: 0.9;
-  height: auto !important;
+  flex-basis: auto;
   overflow: auto;
   display: block;
   &:hover{

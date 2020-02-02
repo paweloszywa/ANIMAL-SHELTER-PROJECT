@@ -79,9 +79,10 @@ cite{
   display: flex;
   flex-grow: 0;
   position: relative;
+  flex-basis: auto;
   img{
     width: 100%;
-    height: auto !important;
+    flex-basis: auto;
 
     & {
       opacity: 1;
