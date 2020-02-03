@@ -7,30 +7,13 @@ import '../../sass/main.scss';
 import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
 
 class HomePage extends Component{
-    state = {
-        data: null,
-    };
-
-    componentDidMount() {
-        fetch("https://my-json-server.typicode.com/paweloszywa/ANIMAL-SHELTER-PROJECT/db").then(r => r.json())
-            .then(data => {
-                this.setState({
-                    data: data
-                });
-            });
-    }
 
     render() {
-        if (this.state.data === null){
-            return null
-        }
-
-        const data = this.state.data;
-        const news = data.news;
-        const accountNumber = data.settings.accountNumber;
-        const descriptionAdd = data.settings.descriptionAdd;
-        const nameForTax = data.settings.nameForTax;
-        const krsNumber = data.settings.krsNumber;
+        const news = this.props.data.news;
+        const accountNumber =  this.props.data.settings.accountNumber;
+        const descriptionAdd = this.props.data.settings.descriptionAdd;
+        const nameForTax = this.props.data.settings.nameForTax;
+        const krsNumber = this.props.data.settings.krsNumber;
 
         return(
             <div className='container'>

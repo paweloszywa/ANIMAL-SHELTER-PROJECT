@@ -39,6 +39,7 @@
     }
   ],
   "cats": [
+    {"name-category": "KOTY DO ADOPCJI"},
     {
       "id": 1,
       "name": "Amiga",
@@ -107,6 +108,7 @@
     }
   ],
   "dogs": [
+    {"name-category": "PSY DO ADOPCJI"},
     {
       "id": 1,
       "name": "Tytan",

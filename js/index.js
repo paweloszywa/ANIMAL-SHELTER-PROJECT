@@ -25,7 +25,7 @@ class Index extends Component {
     };
 
     componentDidMount() {
-        fetch("https://my-json-server.typicode.com/paweloszywa/ANIMAL-SHELTER-PROJECT/settings").then(r => r.json())
+        fetch("https://my-json-server.typicode.com/paweloszywa/ANIMAL-SHELTER-PROJECT/db").then(r => r.json())
             .then(data => {
                 this.setState({
                     data: data
@@ -43,20 +43,20 @@ class Index extends Component {
         return (
             <>
                 <HashRouter>
-                    <Header shelterName={data.name}/>
+                    <Header shelterName={data.settings.name}/>
                     <Switch>
-                        <Route exact path={"/"} component={HomePage}/>
-                        <Route exact path={"/adoption/cat"} component={AdoptionCatPage}/>
-                        <Route exact path={"/adoption/dog"} component={AdoptionDogPage}/>
+                        <Route exact path={"/"} component={() => <HomePage data={data} />}/>
+                        <Route exact path={"/adoption/cat"} component={() => <AdoptionCatPage data={data.cats}/>}/>
+                        <Route exact path={"/adoption/dog"} component={() => <AdoptionDogPage data={data.dogs}/>}/>
                         <Route exact path={"/adopt-all"} component={AllPetsSection}/>
                         <Route exact path={"/advices"} component={AdvicesAdopt}/>
                         <Route exact path={"/about-us"} component={AboutUs}/>
-                        <Route exact path={"/contact"} component={ContactSection}/>
+                        <Route exact path={"/contact"} component={ContactSection} />
                     </Switch>
-                    <Footer  phoneNumber={data.contact.phone} emailAddress={data.contact.mail}
-                             street={data.contact.street} streetGoogle={data.contact.streetGoogleLink}
-                             city={data.contact.city}
-                             facebook={data.contact.facebook} instagram={data.contact.instagram}
+                    <Footer  phoneNumber={data.settings.contact.phone} emailAddress={data.settings.contact.mail}
+                             street={data.settings.contact.street} streetGoogle={data.settings.contact.streetGoogleLink}
+                             city={data.settings.contact.city}
+                             facebook={data.settings.contact.facebook} instagram={data.settings.contact.instagram}
                     />
                 </HashRouter>
             </>
