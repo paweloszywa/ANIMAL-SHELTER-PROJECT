@@ -140,6 +140,11 @@
   color:$fontMainColor;
   text-align: center;
 
+  .mobile-link{
+    color:$fontMainColor;
+    font-size: $font-size*1.4;
+  }
+
   .mobile-call{
     position: fixed;
     bottom: 0;
@@ -149,10 +154,6 @@
     font-family: $font;
     font-weight: 500;
     z-index: 998;
-    .mobile-link{
-      color:$fontMainColor;
-      font-size: $font-size*1.4;
-    }
 
     @include tablet-to-all{
       display: none;

@@ -3,6 +3,7 @@ import React, {Component} from "react";
 class ContactForm extends Component {
 
     state = {
+        name: "",
         email: "",
         message: '',
         errors: [],
@@ -22,11 +23,20 @@ class ContactForm extends Component {
         })
     };
 
+    handleChangeName = (e) => {
+        this.setState( {
+            name: e.target.value
+        })
+    };
 
     handleSubmit = (e) => {
-        const {email, message} = this.state;
+        const {name, email, message} = this.state;
         e.preventDefault();
         let errors = [];
+
+        if(name.length < 3){
+            errors.push("Pole musi zawierać przynajmniej 3 znaki")
+        }
 
         if (email.length < 3 && email.indexOf("@") < 0) {
             errors.push("Pole email musi zawierać znak @ i co najmniej 3 znaki");
@@ -45,7 +55,8 @@ class ContactForm extends Component {
                 endText: "Dziękujemy za wiadomość",
                 name: "",
                 email: "",
-                message: ""
+                message: "",
+                errors: ""
             })
         }
     };
@@ -53,7 +64,7 @@ class ContactForm extends Component {
     render() {
 
         let errorsJsx = null;
-        let errorsStyle = {color: "red"};
+        let errorsStyle = {color: "red", fontSize: '12px'};
         if (this.state.errors.length) {
             errorsJsx = <ul>{this.state.errors.map((el, i) =>
                 <li key={i} style={errorsStyle}>{el}</li>
@@ -75,6 +86,7 @@ class ContactForm extends Component {
                 <input
                        type="text"
                        placeholder="Imię i nazwisko"
+                       onChange={this.handleChangeName}
                        value={this.state.name}/>
                 <input
                        placeholder="Twój e-mail"

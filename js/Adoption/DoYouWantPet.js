@@ -19,7 +19,7 @@ class DoYouWantPet extends Component{
                         }
                     </div>
                 </div>
-                <div className='mobile-call'><a className='mobile-link' href='tel:1111111'>Zadzwoń</a></div>
+                <a className='mobile-link' href='tel:1111111'><div className='mobile-call'>Zadzwoń</div></a>
             </div>
         )
     }
