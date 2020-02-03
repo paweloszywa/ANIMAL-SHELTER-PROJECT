@@ -60,15 +60,27 @@ cite{
 
 .photo-section{
   width: 100%;
-  height: 100% ;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   box-shadow: 0 20px 50px rgba(122, 224, 223, 0.7);
 
   @include tablet-to-all{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     .one-photo{
       width: 50%;
@@ -77,20 +89,13 @@ cite{
 }
 
 .photo-of-pet{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   img{
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
-    @include tablet-to-all{
-      max-width: none;
-      max-height: none;
-      display: flex;
-      width: 100%;
-    }
     opacity: 1;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
