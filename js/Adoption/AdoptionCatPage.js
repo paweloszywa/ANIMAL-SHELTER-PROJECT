@@ -11,7 +11,7 @@ class AdoptionCatPage extends Component{
             <>
                 <section className='all-pets-to-adopt'>
                 <div className='container'>
-                    <AdoptMainText text={this.props.data.nameCategoryCats}/>
+                    <AdoptMainText text={this.props.data.settings.nameCategoryCats}/>
                     <div className='all-adopt-container'>
                         <PetInfo animals={this.props.data.cats}/>
                     </div>
