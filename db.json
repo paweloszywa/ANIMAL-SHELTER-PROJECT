@@ -14,8 +14,8 @@
     "descriptionAdd": "Stowarzyszenie \"Arka Nadziei\" 25-352 Kielce, ul. Mickiewicza 1",
     "nameForTax": "Stowarzyszenie \"Arka Nadziei\" Schronisko dla Bezdomnych Zwierząt w Dyminach",
     "krsNumber": "0000261249",
-    "name-category-dogs": "PSY DO ADOPCJI",
-    "name-category-cats": "KOTY DO ADOPCJI"
+    "nameCategoryDogs": "PSY DO ADOPCJI",
+    "nameCategoryCats": "KOTY DO ADOPCJI"
   },
 
   "news": [
