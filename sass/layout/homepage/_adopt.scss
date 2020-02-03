@@ -60,6 +60,7 @@ cite{
 
 .photo-section{
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,18 +78,14 @@ cite{
 
 .photo-of-pet{
   display: flex;
-  flex-grow: 0;
   position: relative;
-  flex-basis: auto;
   img{
     width: 100%;
-    flex-basis: auto;
+    height: auto;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 
-    & {
-      opacity: 1;
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
-    }
     &:hover {
       opacity: .9;
     }

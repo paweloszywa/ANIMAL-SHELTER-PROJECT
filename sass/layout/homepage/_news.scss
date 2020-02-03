@@ -15,6 +15,7 @@
 
 .news{
   padding-bottom: $padding/2;
+  height: auto;
   @include desktop {
     padding: $padding/2;
     width: 33.333%;
@@ -40,8 +41,6 @@
 .news-image{
   width: 100%;
   opacity: 0.9;
-  flex-basis: auto;
-  overflow: auto;
   display: block;
   &:hover{
     opacity: 0.8;
