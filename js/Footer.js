@@ -12,8 +12,8 @@ class Footer extends Component{
                         <a href={streetGoogle}><p>{city}, {street}</p></a>
                     </div>
                     <div className='social-media'>
-                        <a href={facebook}><p><img src="https://img.icons8.com/office/30/000000/instagram-new.png"/></p></a>
-                        <a href={instagram}><p><img src="https://img.icons8.com/officel/30/000000/facebook-new.png"/></p></a>
+                        <a href={instagram}><p><img src="https://img.icons8.com/office/30/000000/instagram-new.png"/></p></a>
+                        <a href={facebook}><p><img src="https://img.icons8.com/officel/30/000000/facebook-new.png"/></p></a>
                     </div>
                 </div>
             </footer>
