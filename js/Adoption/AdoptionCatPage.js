@@ -13,7 +13,7 @@ class AdoptionCatPage extends Component{
                 <div className='container'>
                     <AdoptMainText text={'KOTY DO ADOPCJI'}/>
                     <div className='all-adopt-container'>
-                        <PetInfo animals={this.props.data}/>
+                        <PetInfo animals={this.props.data.cats}/>
                     </div>
                 </div>
                 </section>

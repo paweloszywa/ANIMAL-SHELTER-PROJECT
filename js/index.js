@@ -46,8 +46,8 @@ class Index extends Component {
                     <Header shelterName={data.settings.name}/>
                     <Switch>
                         <Route exact path={"/"} component={() => <HomePage data={data} />}/>
-                        <Route exact path={"/adoption/cat"} component={() => <AdoptionCatPage data={data.cats}/>}/>
-                        <Route exact path={"/adoption/dog"} component={() => <AdoptionDogPage data={data.dogs}/>}/>
+                        <Route exact path={"/adoption/cat"} component={() => <AdoptionCatPage data={data}/>}/>
+                        <Route exact path={"/adoption/dog"} component={() => <AdoptionDogPage data={data}/>}/>
                         <Route exact path={"/adopt-all"} component={AllPetsSection}/>
                         <Route exact path={"/advices"} component={AdvicesAdopt}/>
                         <Route exact path={"/about-us"} component={AboutUs}/>
