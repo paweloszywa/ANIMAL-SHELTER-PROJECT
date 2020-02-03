@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import AdoptMainText from "../Adoption/MainTextSection";
-import shelterImage from "../../images/animal-shelter.jpg";
 import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
+import dogAdvice from "../../images/white-short-coated-dog-160846.jpg"
 
 class AdvicesAdopt extends Component{
     render() {
@@ -14,7 +14,7 @@ class AdvicesAdopt extends Component{
                         <AdoptMainText text={'PORADY'}/>
                         <div className='section-container'>
                             <div className='section-image'>
-                                <img src='https://lh3.googleusercontent.com/J0AlREIEzxOxSvy4-XW02CWjQWlGagxvaykGFGlXz6xYvcXljyB5cNVxz8CEkLmcOkF7T1Yy_TTbbdubHU8_lHz82gBfv60dfO9blImJ-mj5JNrZJ1htrs5c-tvSpVHtLNJo4r6YO6cyrYB8ICEWtbVIrt0oj05nVcn5OSGOJArjcj7hgHpJbXk7N9Bgz900K0K5v5TaJpp_9czgThtCS9TBOFjMnoPfGhUUqAEwvpHQIDL5j95eJVSjXw8sxZi42xUVt-NLZMvr1dRZx4efs4gYkLEPraOFCtJ1CCMWJuXNIE3k9hDopODXu_5zC8yO-8lX_8MyW4O-Rt_8TZ-dPKNzV2uwLoUx-BPvEYXke5qsjS7ilMwHNKkgsYZ73tL-ssJ5S4RTaZBLFB5aWjMT4nR1xkmDGRVuDcTMB91LCB-HAFqhnB48o7OaC-wccMzzGXTG_dJK1ouFdHTeWgwUnPsqp7bxGYaEWzexO_kZAvWJDy_da9bFhf-wuN-qjW6wD68HCD8bc1CI6U9zCs5sb0v6hx_wLOnjzTsq3W6WszP5f95ObS8rQDtvtwOTMOLs2g2WneuiRupXPhhXMQz2sIcNg_2Jz4lNr6invbbqZdCyU79wBg5zSx26npF7DoWGqnQdvED1mbxXneyBOoXqw1CnCmh9vfBZvh1lmOR6ejIrAHGfEjuX=w1367-h943-no'/>
+                                <img src={dogAdvice}/>
                             </div>
                             <div className='section-text'>
                                 <h1>What is Lorem Ipsum?</h1>

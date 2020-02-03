@@ -48,7 +48,7 @@ class Index extends Component {
                         <Route exact path={"/"} component={() => <HomePage data={data} />}/>
                         <Route exact path={"/adoption/cat"} component={() => <AdoptionCatPage data={data}/>}/>
                         <Route exact path={"/adoption/dog"} component={() => <AdoptionDogPage data={data}/>}/>
-                        <Route exact path={"/adopt-all"} component={AllPetsSection}/>
+                        <Route exact path={"/adopt-all"} component={() => <AllPetsSection data={data}/>}/>
                         <Route exact path={"/advices"} component={AdvicesAdopt}/>
                         <Route exact path={"/about-us"} component={AboutUs}/>
                         <Route exact path={"/contact"} component={ContactSection} />
